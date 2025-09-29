@@ -4,15 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adivinhação de Número</title>
-    <script src="script.js" defer></script>
     <link rel="stylesheet" href="custin.css">
 </head>
 <body>
-    <h1>Adivinhe um número de 1 a 100</h1>
-    <input type="number" id="input" min="1" max="100">
-    <button id="btn" onclick="clique()">Clique aqui</button>
-    <button onclick="novo()">Novo jogo </button>
-    <p id="chances">Tentativas: 0</p>
-    <p id="output">Saída: </p>
+    <div class="card">
+        <h1>🎯 Adivinhe o número de 1 a 100</h1>
+        <p class="descricao">Você tem apenas <strong>3 tentativas</strong> para acertar!</p>
+        
+        <input type="number" id="input" min="1" max="100" placeholder="Digite um número...">
+        
+        <div class="botoes">
+            <button id="btn">Tentar</button>
+            <button id="novo">Novo Jogo</button>
+        </div>
+        
+        <p id="chances">Tentativas: 3</p>
+        <p id="output">Saída: </p>
+    </div>
+
+    <script src="javascript.js"></script>
 </body>
 </html>

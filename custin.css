@@ -1,9 +1,65 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: #f5fff5;
+  background: linear-gradient(135deg, #f5fff5, #e6ffe6);
   color: #222;
   margin: 0;
-  padding: 20px;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  background-color: #fff;
+  border: 2px solid #2ecc71;
+  border-radius: 25px;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 6px 12px rgba(0, 128, 0, 0.15);
+  max-width: 400px;
+  width: 100%;
+  transition: 0.3s;
+}
+
+.card:hover {
+  border-color: red;
+  transform: translateY(-5px);
+}
+
+h1 {
+  color: #2ecc71;
+  margin-bottom: 10px;
+  text-shadow: 1px 1px 2px rgba(255, 0, 0, 0.2);
+}
+
+.descricao {
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: #555;
+}
+
+input {
+  border: 2px solid #2ecc71;
+  border-radius: 15px;
+  padding: 12px;
+  font-size: 16px;
+  outline: none;
+  transition: 0.3s;
+  width: 80%;
+  margin-bottom: 20px;
+}
+
+input:focus {
+  border-color: red;
+  box-shadow: 0 0 8px rgba(255, 0, 0, 0.6);
+}
+
+.botoes {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
 }
 
 button {
@@ -24,40 +80,15 @@ button:hover {
   transform: scale(1.05);
 }
 
-input, select, textarea {
-  border: 2px solid #2ecc71;
-  border-radius: 15px;
-  padding: 10px;
-  font-size: 14px;
-  outline: none;
-  transition: 0.3s;
-  display: block;
-  margin: 10px 0;
-  width: 250px;
+#chances {
+  font-weight: bold;
+  margin-top: 10px;
+  color: #333;
 }
 
-input:focus, select:focus, textarea:focus {
-  border-color: red;
-  box-shadow: 0 0 8px rgba(255, 0, 0, 0.6);
-}
-
-.card {
-  background-color: #fff;
-  border: 2px solid #2ecc71;
-  border-radius: 25px;
-  padding: 20px;
-  margin: 15px 0;
-  box-shadow: 0 4px 10px rgba(0, 128, 0, 0.15);
-  transition: 0.3s;
-  max-width: 400px;
-}
-
-.card:hover {
-  border-color: red;
-  transform: translateY(-3px);
-}
-
-h1 {
-  color: #2ecc71;
-  text-shadow: 1px 1px 2px rgba(255, 0, 0, 0.2);
+#output {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #b2ff6aff;
 }
